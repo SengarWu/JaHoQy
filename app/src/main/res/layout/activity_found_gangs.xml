@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="300dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_add_gangs"
+    tools:context="com.xpple.jahoqy.MyInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="帮派名称："
+            android:textColor="@color/base_color_text_black" />
+
+        <com.xpple.jahoqy.view.DeletableEditText
+            android:id="@+id/et_gangs_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLength="10"
+            android:text=""
+            android:drawableRight="@mipmap/user_delete"
+            android:textColor="@color/base_color_text_black"
+            android:hint="最多10个字"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:textColor="@color/base_color_text_black"
+            android:text="帮派宗旨："/>
+
+        <EditText
+            android:id="@+id/et_gangs_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/base_color_text_black"
+            android:gravity="left"
+            android:lines="5"
+            android:maxLength="50"
+            android:background="@drawable/shape_while"
+            android:hint="50个汉字"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/base_color_text_black"
+            android:layout_gravity="center_vertical"
+            android:text="创建费用："/>
+
+        <TextView
+            android:id="@+id/tv_create_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="2000"
+            android:background="@color/base_color_bg_gray"
+            android:textColor="#ff5d51" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/base_color_text_black"
+            android:text="积分"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:background="#61babdbe"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/btn_create_gangs"
+            android:layout_marginLeft="110dp"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:background="#61babdbe"
+            android:text="创建帮派"/>
+    </LinearLayout>
+</LinearLayout>
+
+

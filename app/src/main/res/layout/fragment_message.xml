@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xpple.jahoqy.ui.mainFragment.MessageFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_layout_height"
+        android:background="@drawable/chat_bar_bg">
+        <RadioGroup
+            android:id="@+id/setType"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/chatButton"
+                android:button="@null"
+                android:background="@drawable/select_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:background="@drawable/chatnotifyseparator"/>
+            <RadioButton
+                android:id="@+id/notifyButton"
+                android:button="@null"
+                android:background="@drawable/select_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/contactList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/contactperson"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/chat_activity_bg"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/contversation_search_bar"
+            layout="@layout/search_bar" />
+        <include
+            android:id="@+id/rl_error_item"
+            layout="@layout/chat_neterror_item"
+            android:visibility="gone" />
+
+        <ListView
+            android:cacheColorHint="#00000000"
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#D4D4D4"
+            android:dividerHeight="1px"
+            android:background="@android:color/transparent" />
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/list1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#D4D4D4"
+            android:dividerHeight="1px"
+            android:cacheColorHint="#00000000"
+            android:fastScrollEnabled="true" />
+    </LinearLayout>
+
+</LinearLayout>

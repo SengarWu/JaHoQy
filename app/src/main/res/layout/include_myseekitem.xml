@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:text="标题："
+                    android:textSize="18sp"
+                    android:id="@+id/tex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/tex1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:id="@+id/tt"
+                    android:text="......................"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                </TextView>
+                <ImageView android:id="@+id/state" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/reputation"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:src="@mipmap/award"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/Award"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:text="0">
+                </TextView>
+                <ImageView
+                    android:src="@mipmap/givemon"
+                    android:layout_marginLeft="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:width="40dp"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/sex"
+                    android:src="@mipmap/notknow"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@mipmap/prople"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:id="@+id/peo"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="0/0"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/time"
+                    android:textSize="15sp"
+                    android:text=".........."
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

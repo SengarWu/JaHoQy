@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base_color_text_white"
+    tools:context="com.xpple.jahoqy.ui.activity.SettingActivity">
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/bg_me">
+
+        <Button
+            android:id="@+id/btn_message_setting"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="消息提醒设置"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/cv_info_2"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>
+
+        <Button
+            android:id="@+id/btn_chat_setting"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="聊天设置"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"/>
+
+
+        <View
+            android:id="@+id/cv_info_3"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>
+
+        <Button
+            android:id="@+id/btn_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="隐私"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/cv_info_4"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>
+
+        <!--<Button
+            android:id="@+id/btn_account_safe"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="账号和安全"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/cv_info_5"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>-->
+
+        <Button
+            android:id="@+id/btn_user_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="用户协议"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/cv_info_6"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="关于"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/cv_info_7"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>
+
+        <Button
+            android:id="@+id/btn_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:drawableRight="@mipmap/back_right1"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/cv_info_8"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/base_color_bg_gray"/>
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/selector_fragment_me"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="24sp"
+            android:text="退隐江湖"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

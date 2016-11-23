@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.xpple.jahoqy.ui.activity.enter_jh"
+    android:orientation="vertical">
+
+<include layout="@layout/include_action_bar"
+     android:id="@+id/common_actionbar"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_brjh">
+<FrameLayout
+    android:id="@+id/nearresult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff" />
+</LinearLayout>
+
+
+</LinearLayout>

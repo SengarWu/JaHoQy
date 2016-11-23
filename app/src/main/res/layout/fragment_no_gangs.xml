@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/bg_nogangs"
+    tools:context="com.xpple.jahoqy.ui.mainFragment.NoGangsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大侠，您尚未加入任何帮派！"
+            android:textSize="22sp"
+            android:textColor="#ff0504" />
+        <Button
+            android:id="@+id/btn_join_gangs"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="加入帮派"
+            android:background="#61babdbe" />
+
+        <Button
+            android:id="@+id/btn_found_gangs"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#61babdbe"
+            android:text="创建帮派"/>
+
+    </LinearLayout>
+</LinearLayout>

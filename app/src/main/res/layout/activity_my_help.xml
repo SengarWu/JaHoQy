@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xpple.jahoqy.ui.activity.MyHelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@mipmap/actionbar_me"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <RadioGroup
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:textColor="@drawable/selector_bc_text"
+                android:background="@drawable/radio_mypub"
+                android:button="@null"
+                android:id="@+id/Question"
+                android:text="问题"
+                android:textSize="26dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="5dp" />
+            <View
+                android:background="@color/black_deep"
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@+id/Question"
+                android:id="@+id/middle"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:textColor="@drawable/selector_bc_text"
+                android:background="@drawable/radio_mypub"
+                android:button="@null"
+                android:id="@+id/task"
+                android:text="任务"
+                android:layout_marginLeft="5dp"
+                android:textSize="26dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_color_text_black"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/top"
+        android:background="@mipmap/bg_me"
+        android:id="@+id/myhelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

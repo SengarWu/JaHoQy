@@ -1,0 +1,47 @@
+<android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:background="@mipmap/actionbar_publish"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+<ImageView
+    android:id="@+id/bk"
+    android:src="@mipmap/lv"
+    android:layout_width="70dp"
+    android:layout_height="match_parent" />
+    <TextView
+        android:textSize="18sp"
+        android:text="江湖任务"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/change"
+        android:src="@mipmap/ditu"
+        android:layout_width="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+
+    <com.xpple.jahoqy.view.xlistview.ZrcListView
+        android:background="@mipmap/bg_xxzy"
+        android:id="@+id/seeklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+    <fragment
+        android:name="com.xpple.jahoqy.ui.otherFragment.selectdrawerFragment"
+        android:id="@+id/drawer_select"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_selectdrawer"/>
+</android.support.v4.widget.DrawerLayout>

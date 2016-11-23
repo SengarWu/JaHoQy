@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.xpple.jahoqy"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        incremental true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/BmobSDK_V3.4.3_0820.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+    compile files('libs/easemobchat_2.2.2.jar')
+    compile files('libs/google-play-services.jar')
+    compile files('libs/Parse-1.9.4.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile 'com.android.support:support-v4:23.0.1'
+    compile files('libs/picasso-2.4.0.jar')
+    compile files('libs/BmobIM_V1.1.9beta_20150820.jar')
+}

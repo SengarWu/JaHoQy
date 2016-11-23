@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context="com.xpple.jahoqy.ui.otherFragment.selectdrawerFragment"
+    android:background="@mipmap/bg_drawer">
+
+    <RadioGroup
+        android:id="@+id/sexgroup"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp">
+        <RadioButton
+            android:id="@+id/onlyboy"
+            android:text="只看男"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/onlygirl"
+            android:text="只看女"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/nolimit"
+            android:text="不限"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <TextView
+        android:text="类型选择"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:gravity="center"
+        android:paddingLeft="30dip"
+         android:background="@mipmap/bg_select"
+        android:layout_gravity="center"
+        android:id="@+id/type"
+        android:layout_width="200dp"
+        android:layout_height="80dp"/>
+
+    <ImageView
+        android:id="@+id/certain"
+        android:src="@mipmap/certain"
+        android:layout_gravity="center"
+        android:text="确定"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/reset"
+        android:src="@mipmap/reset"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:text="重置"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

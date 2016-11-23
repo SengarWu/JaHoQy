@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:id="@+id/answerview"
+    tools:context="com.xpple.jahoqy.ui.activity.ShowQuesiondetails">
+
+    <include layout="@layout/include_action_bar"
+        android:id="@+id/common_actionbar"/>
+
+    <RelativeLayout
+        android:background="@mipmap/bg_xxzy"
+        android:layout_below="@+id/common_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ask"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+     <com.xpple.jahoqy.view.RoundImageView
+         imagecontrol:border_outside_color="#D78988"
+         imagecontrol:border_thickness="3dp"
+         android:src="@mipmap/default_photo"
+         android:id="@+id/image"
+         android:layout_width="80dp"
+         android:layout_height="80dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="昵称："/>
+        <TextView
+            android:id="@+id/username"
+            android:textSize="18sp"
+            android:text="......"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="标题："/>
+
+            <TextView
+                android:id="@+id/title"
+                android:singleLine="false"
+                android:textSize="18sp"
+                android:text="........."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:text="描述信息："/>
+
+        <TextView
+            android:text="暂无"
+            android:textSize="18sp"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:maxWidth="240dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/p1"
+            android:layout_weight="1"
+            android:maxHeight="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/p2"
+                android:layout_weight="1"
+                android:maxHeight="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/p3"
+                android:layout_weight="1"
+                android:maxHeight="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ask"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#a5ecff93" />
+
+    <com.xpple.jahoqy.view.xlistview.ZrcListView
+        android:layout_below="@+id/ask"
+        android:id="@+id/answerlist"
+        android:layout_above="@+id/com"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"/>
+    <View
+        android:layout_above="@+id/com"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#a5ecff93" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/com"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/comment"
+            android:textSize="18dp"
+            android:singleLine="false"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <Button
+        android:layout_gravity="bottom"
+        android:layout_weight="3"
+        android:background="@mipmap/reply"
+        android:id="@+id/reply"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

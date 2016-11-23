@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xpple.jahoqy.ui.activity.PublishActivity">
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_xxzy">
+
+        <ImageView
+            android:id="@+id/iv_publish_rw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_jhrw"
+            android:layout_above="@+id/iv_publish_bxs"
+            android:layout_alignLeft="@+id/iv_publish_bxs" />
+        <ImageView
+            android:id="@+id/iv_publish_bxs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_jhbxs"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</LinearLayout>

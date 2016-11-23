@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:background="@drawable/dialog_text_bg"
+    android:layout_height="200dp">
+        <EditText
+            android:id="@+id/tv_ganggao"
+            android:gravity="left"
+            android:background="#00000000"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/bt"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:maxLength="40"
+            android:paddingRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/bt"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="提交"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</RelativeLayout>

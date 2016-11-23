@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xpple.jahoqy.ui.activity.JHKTMsg2Activity">
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/common_actionbar"
+        android:background="@mipmap/bg_jhkt">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="26sp"
+               android:layout_marginTop="10dp"
+               android:text="江湖情简介"
+               android:gravity="center_horizontal"/>
+
+           <TextView
+               android:id="@+id/tv_msg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               android:paddingTop="10dp"
+               android:paddingRight="10dp"
+               android:textSize="20sp"
+               android:text="@string/info"/>
+       </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

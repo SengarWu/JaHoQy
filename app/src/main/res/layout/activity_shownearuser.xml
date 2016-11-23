@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.xpple.jahoqy.ui.activity.Shownearuser">
+
+    <include layout="@layout/include_action_bar"
+        android:id="@+id/common_actionbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/bg_brjh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <com.xpple.jahoqy.view.RoundImageView
+                android:src="@mipmap/default_photo"
+                imagecontrol:border_outside_color="#D78988"
+                imagecontrol:border_thickness="3dp"
+                android:id="@+id/userphoto"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="昵称："/>
+                    <TextView
+                        android:maxLength="10"
+                        android:id="@+id/nina"
+                        android:textSize="18sp"
+                        android:text=".........."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/sex"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:text="江湖声望："
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/reputation"
+                        android:layout_marginLeft="10dp"
+                        android:text="..........."
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:textSize="18sp"
+                    android:text="江湖宣言："
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:maxLength="18"
+                    android:singleLine="false"
+                    android:id="@+id/jahoannounce"
+                    android:textSize="18sp"
+                    android:text="暂无"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/care"
+                android:text="加好友"
+                android:layout_weight="1"
+                android:background="@drawable/nearbtn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:id="@+id/chat"
+                android:text="聊天"
+                android:background="@drawable/nearbtn_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/base_color_text_gray"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+        <RadioGroup
+            android:id="@+id/rgg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RadioButton
+                android:id="@+id/rb_searchhelp"
+                android:background="@drawable/nearuser_btn_click"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="求助信息"
+                android:textSize="16.0sp"/>
+
+            <View
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/base_color_text_gray"/>
+
+            <RadioButton
+                android:background="@drawable/nearuser_btn_click"
+                android:id="@+id/rb_help"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="热心信息"
+                android:textSize="16.0sp"/>
+
+        </RadioGroup>
+        <FrameLayout
+            android:id="@+id/imfomation"
+            layout="@layout/fragment_anything_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

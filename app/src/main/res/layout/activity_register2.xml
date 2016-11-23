@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    tools:context="com.xpple.jahoqy.ui.activity.Register2Activity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/iv_register"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/imageView" />
+    <com.xpple.jahoqy.view.DeletableEditText
+        android:id="@+id/et_password"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="4dp"
+        android:drawableRight="@mipmap/user_delete"
+        android:drawableLeft="@mipmap/ic_lock"
+        android:maxLength="16"
+        android:background="@mipmap/bg_phone"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="输入密码"
+        android:singleLine="true"
+        android:password="true"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="20sp"/>
+    <com.xpple.jahoqy.view.DeletableEditText
+        android:id="@+id/et_password_again"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="4dp"
+        android:maxLength="16"
+        android:drawableRight="@mipmap/user_delete"
+        android:background="@mipmap/bg_phone"
+        android:layout_below="@+id/et_password"
+        android:layout_alignLeft="@+id/et_password"
+        android:drawableLeft="@mipmap/ic_lock"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/base_color_text_white"
+        android:singleLine="true"
+        android:password="true"
+        android:hint="输入确认密码"/>
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="下一步"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/et_password_again"
+        android:layout_marginBottom="20dp"
+        android:drawableBottom="@mipmap/btn_next"
+        android:textColor="#a2a2a2" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@mipmap/actionbar_xxzy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView android:id="@+id/back"
+                android:src="@mipmap/lv"
+                android:layout_width="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+
+<!--            <Button
+                android:id="@+id/change"
+                android:text="列表"
+                android:layout_width="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent"/>-->
+        </RelativeLayout>
+
+<com.baidu.mapapi.map.MapView
+    android:id="@+id/seekmap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+    </LinearLayout>
+    <fragment
+        android:name="com.xpple.jahoqy.ui.otherFragment.selectdrawerFragment"
+        android:id="@+id/drawer_select"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_selectdrawer"/>
+</android.support.v4.widget.DrawerLayout>

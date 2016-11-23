@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.xpple.jahoqy.ui.activity.ShowSeekHelp">
+
+    <include layout="@layout/include_action_bar"
+        android:id="@+id/common_actionbar"/>
+    <RelativeLayout
+        android:background="@mipmap/bg_xxzy"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="标题："/>
+
+                    <TextView
+                        android:layout_marginLeft="13dp"
+                        android:id="@+id/tt"
+                        android:textSize="18sp"
+                        android:text=".........."
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/reputation"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp">
+                    <ImageView
+                        android:src="@mipmap/award"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:width="30dp"
+                        android:gravity="center"
+                        android:id="@+id/Award"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="18sp"
+                        android:text="0">
+                    </TextView>
+                    <ImageView
+                        android:src="@mipmap/givemon"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:textSize="18sp"
+                        android:id="@+id/mon"
+                        android:gravity="center"
+                        android:text="0"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@mipmap/prople"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextView
+                        android:id="@+id/peo"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="0/0"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:id="@+id/time"
+                        android:layout_marginRight="10dp"
+                        android:textSize="12sp"
+                        android:text="..........."
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_mx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginLeft="10dp"
+            android:text="描述信息："
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_below="@+id/tv_mx"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:text="......................................."
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"/>
+        <LinearLayout
+            android:layout_below="@+id/details"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:background="@mipmap/pic_bg"
+                android:id="@+id/pic1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:background="@mipmap/pic_bg"
+                android:id="@+id/pic2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:background="@mipmap/pic_bg"
+                android:id="@+id/pic3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/accept"
+            android:text="接受帮忙"
+            android:background="@mipmap/givehelp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp" />
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/end"
+            android:text="结束事务"
+            android:background="@mipmap/givehelp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+</LinearLayout>

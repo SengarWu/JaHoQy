@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#00ffffff">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <com.xpple.jahoqy.view.RoundImageView
+            android:src="@mipmap/default_photo"
+            android:id="@+id/imageView"
+            imagecontrol:border_outside_color="#D78988"
+            imagecontrol:border_thickness="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/nname"
+                    android:textSize="18sp"
+                    android:maxLength="10"
+                    android:layout_marginLeft="10dp"
+                    android:text="无名"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18sp"
+                    android:text="不详"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/reputation"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="声望:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView  android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="大侠">
+
+                </TextView>
+                <Button
+                    android:background="@mipmap/comment"
+                    android:id="@+id/comment"
+                    android:text="评价"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

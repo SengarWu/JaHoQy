@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="98dp">
+            <com.xpple.jahoqy.view.RoundImageView
+                android:src="@mipmap/default_photo"
+                imagecontrol:border_outside_color="#D78988"
+                imagecontrol:border_thickness="3dp"
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"/>
+         <TextView
+             android:textColor="@color/xxzy_textcolot"
+             android:textSize="12sp"
+             android:id="@+id/username"
+             android:layout_gravity="center"
+             android:gravity="center_horizontal"
+             android:text="..............."
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/xxzy_textcolot"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="14sp"
+                    android:text="标题："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/xxzy_textcolot"
+                android:textSize="14sp"
+                android:id="@+id/tt"
+                android:text=".........."
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+            </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/reputation"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+                <ImageView
+                    android:src="@mipmap/award"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="@color/xxzy_textcolot"
+                    android:id="@+id/Award"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="0">
+                </TextView>
+                 <ImageView
+                     android:id="@+id/sex"
+                     android:src="@mipmap/notknow"
+                     android:layout_marginLeft="50dp"
+                     android:layout_width="40dp"
+                     android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+             <TextView
+                 android:textColor="@color/xxzy_textcolot"
+                 android:id="@+id/city"
+                 android:layout_alignParentLeft="true"
+                 android:gravity="center"
+                 android:textSize="14sp"
+                 android:text="........."
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/xxzy_textcolot"
+                android:layout_alignParentRight="true"
+                android:id="@+id/time"
+                android:textSize="15sp"
+                android:text="............."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
